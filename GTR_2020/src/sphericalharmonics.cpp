@@ -85,7 +85,7 @@ SphericalHarmonics computeSH( FloatImage images[], bool degamma ) {
             for (int x = 0; x < size; x++) {
                 Vector3 texelVect = cubeMapVecs[index][y * size + x];
                 float weight = texelSolidAngle(x, y, size, size);
-                // forsyths weights
+                    // forsyths weights
                 float weight1 = weight * 4 / 17;
                 float weight2 = weight * 8 / 17;
                 float weight3 = weight * 15 / 17;

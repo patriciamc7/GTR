@@ -238,6 +238,7 @@ class Matrix44
 		Vector3 rotateVector( const Vector3& v) const;
 
 		//transform using local coordinates
+		void setTranslation2(float x, float y, float z);
 		void translate(float x, float y, float z);
 		void rotate( float angle_in_rad, const Vector3& axis  );
 		void scale(float x, float y, float z);

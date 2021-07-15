@@ -16,6 +16,7 @@
 		12D3D2D419903A8200779234 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D3D2D319903A8200779234 /* GLUT.framework */; };
 		12D3D2D619903A9A00779234 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D3D2D519903A9A00779234 /* OpenGL.framework */; };
 		12E51D1A244B39650023C412 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E51CFB244B39600023C412 /* utils.cpp */; };
+		12E51D1B244B39650023C412 /* rendertotexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E51CFC244B39600023C412 /* rendertotexture.cpp */; };
 		12E51D1C244B39650023C412 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E51CFD244B39600023C412 /* shader.cpp */; };
 		12E51D1D244B39650023C412 /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E51CFE244B39600023C412 /* renderer.cpp */; };
 		12E51D1E244B39650023C412 /* animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E51D00244B39610023C412 /* animation.cpp */; };
@@ -60,6 +61,7 @@
 		12D3D2D519903A9A00779234 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		12E51CFA244B39600023C412 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utils.h; path = ../src/utils.h; sourceTree = "<group>"; };
 		12E51CFB244B39600023C412 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = ../src/utils.cpp; sourceTree = "<group>"; };
+		12E51CFC244B39600023C412 /* rendertotexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rendertotexture.cpp; path = ../src/rendertotexture.cpp; sourceTree = "<group>"; };
 		12E51CFD244B39600023C412 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../src/shader.cpp; sourceTree = "<group>"; };
 		12E51CFE244B39600023C412 /* renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = renderer.cpp; path = ../src/renderer.cpp; sourceTree = "<group>"; };
 		12E51CFF244B39610023C412 /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = material.h; path = ../src/material.h; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		12E51D15244B39640023C412 /* animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation.h; path = ../src/animation.h; sourceTree = "<group>"; };
 		12E51D16244B39650023C412 /* fbo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fbo.cpp; path = ../src/fbo.cpp; sourceTree = "<group>"; };
 		12E51D17244B39650023C412 /* fbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fbo.h; path = ../src/fbo.h; sourceTree = "<group>"; };
+		12E51D18244B39650023C412 /* rendertotexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rendertotexture.h; path = ../src/rendertotexture.h; sourceTree = "<group>"; };
 		12E51D19244B39650023C412 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera.h; path = ../src/camera.h; sourceTree = "<group>"; };
 		12E51D2B244B39CE0023C412 /* hdre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hdre.h; path = ../src/extra/hdre.h; sourceTree = "<group>"; };
 		12E51D2C244B39CE0023C412 /* picopng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = picopng.h; path = ../src/extra/picopng.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				12E51D0D244B39630023C412 /* prefab.h */,
 				12E51CFE244B39600023C412 /* renderer.cpp */,
 				12E51D0E244B39630023C412 /* renderer.h */,
+				12E51CFC244B39600023C412 /* rendertotexture.cpp */,
+				12E51D18244B39650023C412 /* rendertotexture.h */,
 				12E51CFD244B39600023C412 /* shader.cpp */,
 				12E51D0F244B39630023C412 /* shader.h */,
 				12E51D03244B39610023C412 /* texture.cpp */,
@@ -342,6 +347,7 @@
 				12E51D28244B39650023C412 /* main.cpp in Sources */,
 				12E51D4C244B3A0E0023C412 /* coldet_bld.cpp in Sources */,
 				12E51D4A244B3A0E0023C412 /* box_bld.cpp in Sources */,
+				12E51D1B244B39650023C412 /* rendertotexture.cpp in Sources */,
 				12E51D21244B39650023C412 /* texture.cpp in Sources */,
 				12E51D34244B39CE0023C412 /* textparser.cpp in Sources */,
 				12E51D1A244B39650023C412 /* utils.cpp in Sources */,

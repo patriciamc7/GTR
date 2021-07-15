@@ -237,7 +237,13 @@ void Matrix44::rotateGlobal( float angle_in_rad, const Vector3& axis )
 	R.setRotation(angle_in_rad, axis);
 	*this = *this * R;
 }
-
+void Matrix44::setTranslation2(float x, float y, float z)
+{
+	//setIdentity();
+	m[12] = x;
+	m[13] = y;
+	m[14] = z;
+}
 void Matrix44::translate(float x, float y, float z)
 {
 	Matrix44 T;
